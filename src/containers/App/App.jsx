@@ -1,7 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
 import Login from "../Login";
-// import Homepage from "/";
+import Homepage from "../Homepage";
 import "./App.module.scss";
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <Router>
         <Login path="/" />
-        {/* <Homepage path="/homepage" /> */}
+        <Homepage path="/homepage" />
       </Router>
     );
   }

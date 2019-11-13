@@ -6,8 +6,10 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        <Redirect noThrow from="/" to="login" />
-        <Login path="login" />
+        <Redirect noThrow from="/" to="/homepage" />
+        <PrivateRoute path="private" user={this.state.user} />
+        <Login path="/" />
+        <Homepage path="/homepage" />
       </Router>
     );
   }
