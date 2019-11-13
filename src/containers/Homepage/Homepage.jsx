@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from "./Homepage.module.scss";
 
-class Homepage extends Component {
+class Homepage extends React.Component {
   render() {
     return (
-      <body>
+      <div className={styles.homepageBackground}>
         <p className={styles.test}>test</p>
-      </body>
+      </div>
     );
   }
 }

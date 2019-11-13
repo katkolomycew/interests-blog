@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Router, Redirect } from "@reach/router";
 import Login from "../containers/Login";
+import Homepage from "../Homepage";
 
 class Routes extends Component {
   render() {
     return (
       <Router>
-        <Redirect noThrow from="/" to="/homepage" />
-        <PrivateRoute path="private" user={this.state.user} />
-        <Login path="/" />
+        <Redirect noThrow from="/login" to="/homepage" />
+        <Login path="/login" />
         <Homepage path="/homepage" />
       </Router>
     );

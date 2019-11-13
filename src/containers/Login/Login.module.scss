@@ -1,7 +1,38 @@
-body {
+.loginBackground {
   background-image: url(./images/app-background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+}
+
+.formBackground {
+  background-color: rgba(191, 142, 99, 0.8);
+  border-radius: 15px;
+  // margin: 35vh auto;
+  margin: 45vh auto;
+  display: block;
+  // height: 25vh;
+  height: 10vh;
+  width: 50vh;
+}
+
+button { 
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(151, 162, 166);
+	color: rgb(242, 226, 206);
+	text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  margin-top: 20px;
+	cursor: pointer;
+  padding: 15px;
+  border: none;
+  width: 80%;
+}
+
+button:hover {
+  background-color: rgba(89, 83, 2, 0.8);
 }
