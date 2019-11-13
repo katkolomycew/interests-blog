@@ -1,14 +1,16 @@
 import React from "react";
-import styles from "./App.module.scss";
+import { Router } from "@reach/router";
+import Login from "../Login";
+// import Homepage from "/";
+import "./App.module.scss";
 
 class App extends React.Component {
   render() {
     return (
-      <body>
-        <main>
-          <p className={styles.test}>test</p>
-        </main>
-      </body>
+      <Router>
+        <Login path="/" />
+        {/* <Homepage path="/homepage" /> */}
+      </Router>
     );
   }
 }
