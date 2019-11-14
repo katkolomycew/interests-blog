@@ -1,0 +1,54 @@
+.listContainer {
+  background-color: rgba(191, 142, 99, 0.8);
+  border-radius: 15px;
+  margin: 30vh auto;
+  display: block;
+  padding: 5px;
+  height: 50vh;
+  width: 50vh;
+}
+
+.listHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headingTitle {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.listLabel { 
+  display: block;
+  padding: 5px;
+}
+
+.listInput {
+  border: none;
+  border-bottom: 3px dashed rgb(0, 0, 0);
+  background-color: transparent;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  padding: 5px;
+  width: 70%;
+}
+
+.listButton {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.listItems {
+  text-align: left;
+
+  li {
+    position: relative;
+    padding: 5px;
+  }
+}
+
+.listItems {
+  text-decoration-color: line-through wavy rgb(0, 0, 0);
+}

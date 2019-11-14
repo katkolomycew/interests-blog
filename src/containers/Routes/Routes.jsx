@@ -7,8 +7,8 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        <Redirect noThrow from="/login" to="/homepage" />
-        <Login path="/login" />
+        <Redirect noThrow from="/" to="/homepage" />
+        <Login path="/" />
         <Homepage path="/homepage" />
       </Router>
     );

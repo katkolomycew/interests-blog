@@ -10,7 +10,8 @@ class Login extends React.Component {
       .then(result => {
         const user = result.user;
         this.setState({ user });
-        console.log(user);
+        console.log(result);
+        this.props.navigate("/homepage");
       })
       .catch(error => {
         console.log(error);
@@ -19,27 +20,11 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className={styles.loginBackground}>
-        <section className={styles.formBackground}>
-          <form className={styles.loginForm}>
-            {/* <div className={styles.formInputs}>
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              required
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              required
-            /> */}
-            <button onClick={this.signIn}>Continue with Google</button>
-            {/* </div> */}
-          </form>
-        </section>
-      </div>
+      <section className={styles.loginBackground}>
+        <div className={styles.formBackground}>
+          <button onClick={this.signIn}>Continue with Google</button>
+        </div>
+      </section>
     );
   }
 }

@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Login path="/login" />
+        <Login path="/" />
         <Homepage path="/homepage" />
       </Router>
     );
