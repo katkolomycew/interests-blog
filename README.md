@@ -1,3 +1,7 @@
+Interests Blog — November 2019 (_nology)
+
+Small personal interest project with a focus on auth, rooting, and classes to challenge myself personally with areas I initally found difficult.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
